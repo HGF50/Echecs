@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: #78350f; }
+        .icon { 
+            width: 512px; height: 512px; 
+            background: linear-gradient(135deg, #78350f 0%, #451a03 100%);
+            border-radius: 64px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .board {
+            position: absolute;
+            width: 320px;
+            height: 320px;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            opacity: 0.2;
+        }
+        .square:nth-child(even) { background: #fbbf24; }
+        .square:nth-child(odd) { background: transparent; }
+        .king {
+            font-size: 120px;
+            z-index: 1;
+            margin-bottom: 20px;
+        }
+        .text {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #fbbf24;
+            z-index: 1;
+        }
+        .emoji { font-size: 48px; }
+        .label { font-size: 24px; }
+    </style>
+</head>
+<body>
+    <div class="icon">
+        <div class="board">
+            <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+            <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+            <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+            <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+            <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+            <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+            <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+            <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+        </div>
+        <div class="king">♔</div>
+        <div class="text">
+            <div class="emoji">♟️</div>
+            <div class="label">ÉCHECS</div>
+        </div>
+    </div>
+</body>
+</html>
